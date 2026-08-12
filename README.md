@@ -15,9 +15,9 @@ flowchart TD
     User([User Voice / Browser Playground]) <-->|WebRTC Stream| LiveKit[LiveKit Agent Process]
     
     subgraph VP["Voice Pipeline (LiveKit Agent)"]
-        STT[Sarvam STT / Whisper]
+        STT[Sarvam STT]
         LLM[OmniRoute LLM]
-        TTS[Sarvam TTS / OpenAI]
+        TTS[Sarvam TTS]
     end
     
     LiveKit <--> VP
@@ -63,8 +63,7 @@ Configure your credentials:
 - **LiveKit**: `LIVEKIT_URL`, `LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET`
 - **OmniRoute**: `OMNIROUTE_BASE_URL`, `OMNIROUTE_API_KEY`, `OMNIROUTE_MODEL`
 - **Sarvam AI**: `SARVAM_API_KEY`, `SARVAM_SPEAKER`, `SARVAM_MODEL`, `SARVAM_LANGUAGE_CODE`
-- **Web Search & News Tools**: `NEWSAPI_KEY`, `TAVILY_API_KEY`, `FIRECRAWL_API_KEY`
-- **Other Optional Keys**: `OPENAI_API_KEY`, `GITHUB_TOKEN`
+- **Web Search & News Tools**: `NEWSAPI_KEY`, `FIRECRAWL_API_KEY`
 
 ---
 

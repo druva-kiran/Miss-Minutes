@@ -1,0 +1,28 @@
+# Environments & Keys
+.env
+*.env
+backend/.env
+!.env.example
+!backend/.env.example
+
+# Python & Virtual Environments
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+.uv/
+
+# Temporary / Scratch files
+test_*.py
+backend/test_*.py
+
+# System & IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
